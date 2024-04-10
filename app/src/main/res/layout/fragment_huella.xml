@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    tools:context=".juanCarlos.HuellaFragment">
+
+    <ImageButton
+        android:id="@+id/btnAtrasHuella"
+        style="@style/botones"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:contentDescription="Botón de retroceso"
+        android:onClick="onAtrasClick"
+        android:src="@drawable/foto_atras"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/btnObtenerHuella"
+        android:layout_width="360dp"
+        android:layout_height="462dp"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="Huella"
+        android:onClick="onObtenerHuellaClick"
+        android:src="@drawable/foto_huella"
+        android:visibility="visible" />
+
+</RelativeLayout>

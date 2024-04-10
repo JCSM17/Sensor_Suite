@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".juanCarlos.JcFragmentMenu">
+
+    <!-- LinearLayout con ImageButtons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/linkTrailer"
+            style="@style/botones"
+            android:layout_width="61dp"
+            android:layout_height="59dp"
+            android:contentDescription="Link al trailer en YouTube"
+            android:onClick="abrirLinkTrailer"
+            android:src="@drawable/foto_gta3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/vibracion"
+            style="@style/botones"
+            android:src="@drawable/foto_vibracion"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout="@layout/fragment_vibracion" />
+
+        <ImageButton
+            android:id="@+id/gps"
+            style="@style/botones"
+            android:src="@drawable/foto_gps"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout="@layout/fragment_gps" />
+
+        <ImageButton
+            android:id="@+id/sensorHuella"
+            style="@style/botones"
+            android:src="@drawable/foto_huella"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout="@layout/fragment_huella" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/playTrailer"
+        style="@style/botones"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="Reproducir trailer"
+        android:src="@drawable/foto_play" />
+
+    <ImageView
+        android:id="@+id/fotoJC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/foto_jc" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_jc"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        tools:layout="@layout/fragment_placeholder" />
+
+</RelativeLayout>

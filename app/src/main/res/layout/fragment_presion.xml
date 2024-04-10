@@ -1,0 +1,56 @@
+<!-- res/layout/fragment_presion.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:orientation="vertical"
+    tools:context=".jesus.PresionFragment">
+
+    <ImageButton
+        android:id="@+id/btnAtrasPresion"
+        style="@style/botones"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:contentDescription="Botón de retroceso"
+        android:onClick="onAtrasClick"
+        android:src="@drawable/foto_atras"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Sensor de presión"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/presionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Presión: "
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/presionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Por Jesús Alberto León Mindiola"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

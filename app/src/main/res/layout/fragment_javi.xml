@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".javi.JaviFragmentMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!-- LinearLayout con ImageButtons -->
+        <ImageButton
+            android:id="@+id/acelerometro"
+            style="@style/botones"
+            android:src="@drawable/foto_acelerometro"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout="@layout/fragment_acelerometro" />
+
+        <ImageButton
+            android:id="@+id/giroscopio"
+            style="@style/botones"
+            android:src="@drawable/foto_giroscopio"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout="@layout/fragment_giroscopio" />
+
+        <ImageButton
+            android:id="@+id/proximidad"
+            style="@style/botones"
+            android:src="@drawable/foto_proximidad"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <!--   tools:layout="@layout/fragment_proximidad" -->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fotoJavi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/foto_javi" />
+
+    <androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_container_javi"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        tools:layout="@layout/fragment_placeholder" />
+
+</RelativeLayout>
